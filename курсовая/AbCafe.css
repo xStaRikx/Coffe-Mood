@@ -1,0 +1,240 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #d07684; 
+    color: #FFF9F0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.cafe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 253, 250, 0.9);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cafe-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cafe-title {
+    font-size: 3rem;
+    color: #d07684; /* Акцентный цвет */
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cafe-subtitle {
+    font-size: 1.2rem;
+    color: #8B5A5A;
+    font-style: italic;
+}
+
+.cafe-divider {
+    width: 150px;
+    height: 3px;
+    background: #E0C8C8;
+    margin: 25px auto;
+}
+
+.cafe-content {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: #5A4A42;
+}
+
+.menu-highlights {
+    background-color: rgba(255, 245, 245, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border-left: 4px solid #d07684;
+}
+
+.menu-highlights h3 {
+    color: #d07684;
+    margin-top: 0;
+}
+
+.menu-highlights ul {
+    padding-left: 20px;
+}
+
+.menu-highlights li {
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: none;
+    color: #5A4A42;
+}
+
+.menu-highlights li:before {
+    content: "•";
+    color: #d07684;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -20px;
+    top: -3px;
+}
+
+.cafe-footer {
+    text-align: center;
+    font-style: italic;
+    color: #8B5A5A;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #E0C8C8;
+}
+
+.ps-note {
+    background-color: rgba(255, 245, 245, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    border: 1px dashed #d07684;
+    color: #5A4A42;
+}
+.insta{
+    width: 52px;
+    height: 52px;
+}
+.viber{
+    width: 50px;
+    height: 50px;
+}
+.contactsBox{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 1200px) {
+    .container {
+        gap: 50px;
+        margin-left: 50px;
+    }
+
+    .cafe {
+        width: 400px;
+        font-size: 32px;
+    }
+
+    .main-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .cafe {
+        width: 300px;
+        font-size: 28px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .main-content {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cafe {
+        width: 250px;
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cafe {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cafe {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
+
+    .about-text {
+        font-size: 12px;
+    }
+}
+
+/* Добавляем поддержку тёмной темы */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #8b5a5a;
+    }
+
+    .dcafe, .hh, .pr, .ab, .con, .log {
+        color: #ffffff;
+    }
+}
+
+/* Добавляем поддержку уменьшенного движения */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Добавляем поддержку высокой контрастности */
+@media (forced-colors: active) {
+    .dcafe, .hh, .pr, .ab, .con, .log {
+        border: 2px solid currentColor;
+    }
+}

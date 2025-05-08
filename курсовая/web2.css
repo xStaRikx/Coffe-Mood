@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #d07684;
+    min-height: 100vh;
+}
+
+.Ellipse {
+    background-image: url(photo/Ellipse1.png);
+    top: 0;
+    left: 0;
+}
+
+.Ellipse2 {
+    background-image: url(photo/Ellipse2.png);   
+}
+
+.bg-image {
+    position: absolute;
+    width: 600px; 
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1; 
+}
+
+.bg-image.Ellipse2 {
+    bottom: -30%;
+    right: 0;
+    background-position: bottom right;
+}
+
+.bg-image.Ellipse {
+    top: -30%;
+    left: -10%;
+    background-position: top left;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.dcafe {
+    font-size: 40px;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 570px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dcafe {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dcafebox {
+    font-weight: 900;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+.hh, .pr, .ab, .con {
+    font-weight: 900;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 1));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 7px;
+}
+
+.mainblock {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.mainbox, .mainbox2 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.mainbox img, .eza {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.eza {
+    background: none !important;
+    padding: 0 !important;
+}
+
+.vaffel1, .fraza {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.buttonToBuy {
+    margin-top: 24px;
+    width: 220px;
+    display: block;
+    margin-left: 0;
+}
+
+.hh:hover, .pr:hover, .ab:hover, .con:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease;
+}
+
+.buttonToBuy:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.buttonToBuy:active {
+    transform: scale(0.98);
+}
+
+.dcafebox:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+.modal {
+    overflow: auto; 
+    display: none;
+    position: fixed;
+    z-index: 100;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+.cafe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #d07684;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-left: 60px;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 0 20px;
+    }
+    
+    .container {
+        margin-right: 20px;
+        gap: 15px;
+    }
+    
+    .mainblock {
+        padding: 20px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+    
+    .burger-menu {
+        display: block;
+    }
+    
+    .mainblock {
+        margin-top: 20px;
+    }
+    
+    .mainbox, .mainbox2 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dcafebox {
+        width: 140px;
+        padding-left: 20px;
+    }
+    
+    .mainblock {
+        padding: 10px;
+    }
+    
+    .mainbox img, .eza {
+        max-width: 100%;
+    }
+    
+    .buttonToBuy {
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (min-width: 993px) {
+    .cafe {
+        position: static;
+        width: 200px;
+        font-size: 40px;
+        font-weight: normal;
+        background: none;
+        text-align: left;
+        padding: 0;
+        color: white;
+        box-shadow: none;
+    }
+    .mainblock {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 0;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: auto;
+        background: linear-gradient(120deg, #d07684 80%, #fff0f5 100%);
+        border-radius: 30px;
+    }
+    .mainbox {
+        position: static;
+        width: 600px;
+        margin: 0;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eza {
+        width: 600px;
+        height: auto;
+        padding-bottom: 0;
+        margin-top: 0;
+        max-width: 600px;
+        display: block;
+        position: static;
+        border-radius: 20px;
+        box-shadow: 0 4px 24px 0 rgba(208,118,132,0.13);
+        background: #fff0f5;
+        padding: 10px 0;
+    }
+    .mainbox2 {
+        position: static;
+        width: 700px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 700px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .vaffel1 {
+        font-size: 28px;
+        margin-bottom: 18px;
+        text-align: left;
+        max-width: 650px;
+        font-weight: 900;
+        position: relative;
+        z-index: 1;
+    }
+    .vaffel1::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 6px;
+        background: linear-gradient(90deg, #fff0f5 0%, #d07684 100%);
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    .fraza {
+        font-size: 22px;
+        font-weight: 1000;
+        margin-bottom: 30px;
+        text-align: left;
+        max-width: 650px;
+    }
+    .buttonToBuy {
+        display: block;
+        margin: 30px 0 0 0;
+        left: unset;
+        bottom: unset;
+        width: 220px;
+        height: 54px;
+        font-size: 20px;
+        position: static;
+        max-width: 220px;
+        box-shadow: 0 4px 24px 0 rgba(208,118,132,0.13);
+        border-radius: 30px;
+        background: #fff0f5;
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 1200px) {
+    .container {
+        gap: 50px;
+        margin-left: 50px;
+    }
+
+    .cafe {
+        width: 400px;
+        font-size: 32px;
+    }
+
+    .main-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cafe {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .menu-title {
+        font-size: 28px;
+    }
+
+    .menu-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cafe {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .menu-title {
+        font-size: 24px;
+    }
+
+    .menu-text {
+        font-size: 12px;
+    }
+}
+
+/* Добавляем поддержку тёмной темы */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #8b5a5a;
+    }
+
+    .dcafe, .hh, .pr, .ab, .con, .log {
+        color: #ffffff;
+    }
+}
+
+/* Добавляем поддержку уменьшенного движения */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Добавляем поддержку высокой контрастности */
+@media (forced-colors: active) {
+    .dcafe, .hh, .pr, .ab, .con, .log {
+        border: 2px solid currentColor;
+    }
+}

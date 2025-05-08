@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="web2.css">
+    <title>Coffee & Mood - Menu</title>
+</head>
+<body>
+    <div class="bg-image Ellipse"></div>
+    <div class="bg-image Ellipse2"></div>
+    <div class="cafe">
+        <a href="website.html" class="dcafe">Coffee & Mood</a>
+    </div>
+    <header class="header">
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <a href="website.html" class="hh">Home</a>
+            <a href="AbCafe.html" class="ab">About</a>
+            <a href="contacts.xml" class="con">Contacts</a>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <a href="website.html" class="hh">Home</a>
+            <a href="AbCafe.html" class="ab">About</a>
+            <a href="contacts.xml" class="con">Contacts</a>
+        </div>
+    </div>
+
+    <main class="mainblock">
+        <div class="mainbox">
+            <img src="photo/eza.png" class="eza" alt="eza">
+        </div>
+        <div class="mainbox2">
+            <p class="vaffel1">
+                Crispy golden waffle topped with fresh strawberries, blueberries, and raspberries. 
+                Drizzled with honey and finished with a dollop of whipped cream for a sweet, fruity delight.
+            </p>
+            <p class="fraza">Simple. Fresh. Delicious.</p>
+            <button class="buttonToBuy" onclick="openOrderForm()">BUY 3$</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <div id="orderModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Оформление заказа</h2>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адрес доставки:</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Количество:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Подтвердить заказ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </footer>
+
+    <script src="web.js"></script>
+    <script src="web2.js"></script>
+</body>
+</html>

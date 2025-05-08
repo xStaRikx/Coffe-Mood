@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contacts.xsl"?>
+
+<coffee_shop>
+    <owner>
+        <name>Станислав</name>
+        <contacts>
+            <telegram>https://t.me/StaRikx</telegram>
+            <instagram>https://www.instagram.com/dnttellmeagain/</instagram>
+            <phone>+375259476179</phone>
+        </contacts>
+    </owner>
+    <description>
+        Уютное кафе в центре города с авторскими десертами и лучшим кофе.
+    </description>
+</coffee_shop>
